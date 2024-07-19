@@ -1,0 +1,29 @@
+Overview
+
+This project comprises two Python scripts that work together to detect and manage parking spaces in a video feed. The system uses OpenCV for image processing and pickle for data storage.
+
+Files
+
+main.py: The primary script that processes a video feed to detect parking spaces.
+ParkingSpacePicker.py: A utility to manually select parking spaces in an image, which are then used by main.py.
+Dependencies
+OpenCV (cv2)
+pickle
+cvzone
+numpy
+How It Works
+main.py
+This script processes a video feed (e.g., 'carPark.mp4') and uses predefined parking space positions to detect available spaces. It applies image processing techniques to count the non-zero pixels in each defined parking space, determining its occupancy status.
+
+ParkingSpacePicker.py
+This script allows users to manually select parking spaces in a still image. The selected spaces are saved using pickle for later use by main.py.
+
+Setup and Usage
+Install the required Python libraries: opencv-python, pickle, cvzone, numpy.
+Run ParkingSpacePicker.py to select parking spaces on an image and save these positions.
+Run main.py with a video feed to start the parking space detection.
+
+Author
+Venkata Thapaswini Thota
+
+This structure provides a clear overview of your project, its files, dependencies, and usage instructions. You can adjust the content according to your project's specifics and additional details you wish to include. ​
